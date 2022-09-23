@@ -12,7 +12,7 @@ import com.wamas.designpatterns.creational.singleton.manager.Manager;
 
 /***
  * The singleton pattern allows easy access to classes that should only be created once. It should only be accessed by the
- * getInstance() method. Storing a reference to it can circumvent concurrent thread safety so it shouldn't be done
+ * getInstance() method. Storing a reference to it can circumvent concurrent thread safety, so it shouldn't be done
  */
 public class SingletonPattern {
     public static void main(String[] args) {

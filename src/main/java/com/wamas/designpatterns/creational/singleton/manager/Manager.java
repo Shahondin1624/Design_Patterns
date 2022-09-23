@@ -13,6 +13,7 @@ import java.util.Set;
 
 /***
  * Only one instance of the singleton class is allowed per project. It can only be accessed via the getInstance() method
+ * and cannot be created a second time
  * Watch out: If your project uses multiple threads, you have to deal with concurrent manipulation of this singleton
  */
 public class Manager {
