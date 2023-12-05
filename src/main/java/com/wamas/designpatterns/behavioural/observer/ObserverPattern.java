@@ -17,11 +17,11 @@ public class ObserverPattern {
         ExampleObservable observable = new ExampleObservable();
         Observer observer1 = observed -> System.out.println("Observer1 was notified");
         Observer observer2 = observed -> System.out.println("Observer2 was notified");
-        observable.notifyAllObservers();
+        observable.notifyObservers();
         observable.registerObserver(observer1);
         observable.registerObserver(observer2);
-        observable.notifyAllObservers();
+        observable.notifyObservers();
         observable.unregisterObserver(observer2);
-        observable.notifyAllObservers();
+        observable.notifyObservers();
     }
 }

@@ -24,7 +24,8 @@ public class ExampleObservable implements Observable {
         registeredObserver.remove(observer);
     }
 
-    public void notifyAllObservers() {
+    @Override
+    public void notifyObservers() {
         registeredObserver.forEach(observer -> observer.onChange(this));
     }
 }
